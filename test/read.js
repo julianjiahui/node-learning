@@ -4,11 +4,7 @@ http.createServer(function(req, res) {
 	fs.readFile('heyjude.js', 'utf8', function(err, data) {
 		res.writeHead(200, {'Content-Type': 'text/plain'});
 		if (err)
-<<<<<<< HEAD
 			res.write('Oops!!Could not find or open file for reading!');
-=======
-			res.write('Could not find or open file for reading!');
->>>>>>> origin/master
 		else
 			res.write(data);
 		res.end();
