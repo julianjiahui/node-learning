@@ -4,5 +4,5 @@ http.createServer(function (req, res) {
 		'content-type':'text/plain'
 	});
 	res.end("Hey, Jude!");
-}).listen(90,'127.0.0.4');
-console.log('Server running on 127.0.0.4:90');
+}).listen(90);
+console.log('Server running on 127.0.0.1:90');
